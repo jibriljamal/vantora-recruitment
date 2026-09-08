@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vantora Recruitment | Connecting Talent With Opportunity</title>
+  <meta name="description" content="Vantora Recruitment connects businesses with reliable, skilled and motivated talent across the UK.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #ffffff;
+      color: #111111;
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(255,255,255,0.96);
+      border-bottom: 1px solid #eeeeee;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 18px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      font-weight: 400;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    nav a {
+      color: #111;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 140px 25px 80px;
+      background: linear-gradient(135deg, #f7f7f7, #ffffff);
+    }
+
+    .hero-content {
+      max-width: 1200px;
+      width: 100%;
+      margin: auto;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 8px 15px;
+      border: 1px solid #dddddd;
+      border-radius: 30px;
+      font-size: 13px;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      max-width: 850px;
+      font-size: clamp(48px, 8vw, 86px);
+      line-height: 1.02;
+      letter-spacing: -4px;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      color: #666666;
+    }
+
+    .hero p {
+      max-width: 650px;
+      font-size: 19px;
+      color: #555555;
+      margin-bottom: 35px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .btn-dark {
+      background: #111111;
+      color: white;
+    }
+
+    .btn-light {
+      border: 1px solid #cccccc;
+      color: #111111;
+      background: white;
+    }
+
+    section {
+      padding: 100px 25px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-label {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #777777;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-size: clamp(36px, 5vw, 58px);
+      letter-spacing: -2px;
+      line-height: 1.1;
+      margin-bottom: 25px;
+    }
+
+    .intro {
+      max-width: 700px;
+      color: #555555;
+      font-size: 18px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 50px;
+    }
+
+    .card {
+      padding: 35px;
+      border: 1px solid #e5e5e5;
+      border-radius: 8px;
+      background: white;
+    }
+
+    .card-number {
+      font-size: 13px;
+      color: #888888;
+      margin-bottom: 35px;
+    }
+
+    .card h3 {
+      font-size: 23px;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #666666;
+      font-size: 15px;
+    }
+
+    .dark-section {
+      background: #111111;
+      color: white;
+    }
+
+    .dark-section .section-label {
+      color: #999999;
+    }
+
+    .dark-section .intro {
+      color: #bbbbbb;
+    }
+
+    .dark-section .card {
+      background: #181818;
+      border-color: #292929;
+    }
+
+    .dark-section .card p {
+      color: #aaaaaa;
+    }
+
+    .contact {
+      text-align: center;
+      background: #f6f6f6;
+    }
+
+    .contact .intro {
+      margin: auto;
+      margin-bottom: 35px;
+    }
+
+    footer {
+      background: #111111;
+      color: #aaaaaa;
+      padding: 35px 25px;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-logo {
+      color: white;
+      font-weight: 800;
+    }
+
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #111111;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      z-index: 999;
+    }
+
+    @media (max-width: 800px) {
+      nav ul {
+        display: none;
+      }
+
+      .hero h1 {
+        letter-spacing: -2px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 75px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">VANTORA <span>RECRUITMENT</span></div>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#employers">Employers</a></li>
+      <li><a href="#candidates">Candidates</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="tag">UK RECRUITMENT AGENCY</div>
+
+      <h1>
+        Connecting <span>talent</span><br>
+        with opportunity.
+      </h1>
+
+      <p>
+        Vantora Recruitment helps businesses find reliable,
+        skilled and motivated people while helping candidates
+        find opportunities where they can succeed.
+      </p>
+
+      <div class="buttons">
+        <a href="#employers" class="btn btn-dark">I'm Hiring</a>
+        <a href="#candidates" class="btn btn-light">I'm Looking For Work</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-label">01 — About Vantora</div>
+
+      <h2>Recruitment built around people.</h2>
+
+      <p class="intro">
+        We believe recruitment is more than filling vacancies.
+        It's about understanding businesses, understanding candidates
+        and creating the right match for both.
+      </p>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="card-number">01</div>
+          <h3>People First</h3>
+          <p>
+            We take the time to understand candidates and employers
+            before making introductions.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-number">02</div>
+          <h3>Right Match</h3>
+          <p>
+            Our goal is to connect businesses with candidates who
+            genuinely fit their requirements.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-number">03</div>
+          <h3>Long-Term</h3>
+          <p>
+            We aim to build lasting relationships with both clients
+            and candidates.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="employers" class="dark-section">
+    <div class="container">
+
+      <div class="section-label">02 — Employers</div>
+
+      <h2>Need the right people?</h2>
+
+      <p class="intro">
+        Tell us what you're looking for and we'll help you identify
+        suitable candidates for your vacancy.
+      </p>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="card-number">01</div>
+          <h3>Tell Us Your Vacancy</h3>
+          <p>
+            Share your requirements, role details and ideal candidate.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-number">02</div>
+          <h3>Candidate Search</h3>
+          <p>
+            We source and identify candidates who match your needs.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-number">03</div>
+          <h3>Make the Match</h3>
+          <p>
+            Suitable candidates are introduced to your business.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="candidates">
+    <div class="container">
+
+      <div class="section-label">03 — Candidates</div>
+
+      <h2>Find your next opportunity.</h2>
+
+      <p class="intro">
+        Looking for your next role? Register your interest with
+        Vantora Recruitment and we'll help connect you with suitable
+        opportunities.
+      </p>
+
+      <div class="buttons" style="margin-top:35px;">
+        <a href="mailto:vantorarecruitment@gmail.com"
+           class="btn btn-dark">
+          Register Your Interest
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="services" class="dark-section">
+    <div class="container">
+
+      <div class="section-label">04 — Services</div>
+
+      <h2>What we do.</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Permanent Recruitment</h3>
+          <p>
+            Helping businesses find people for long-term positions.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Temporary Recruitment</h3>
+          <p>
+            Supporting businesses with flexible staffing requirements.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Candidate Sourcing</h3>
+          <p>
+            Identifying and connecting businesses with suitable talent.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-label">05 — Contact</div>
+
+      <h2>Let's talk recruitment.</h2>
+
+      <p class="intro">
+        Whether you're hiring or looking for your next opportunity,
+        get in touch with Vantora Recruitment.
+      </p>
+
+      <div class="buttons" style="justify-content:center;">
+
+        <a href="mailto:vantorarecruitment@gmail.com"
+           class="btn btn-dark">
+          Email Us
+        </a>
+
+        <a href="https://wa.me/447840135214"
+           class="btn btn-light">
+          WhatsApp Us
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+
+    <div class="footer-logo">
+      VANTORA RECRUITMENT
+    </div>
+
+    <div>
+      © 2026 Vantora Recruitment. All rights reserved.
+    </div>
+
+  </div>
+</footer>
+
+<a href="https://wa.me/447840135214"
+   class="whatsapp">
+  WhatsApp Us
+</a>
+
+</body>
+</html>
