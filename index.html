@@ -9,6 +9,7 @@
 <meta name="description" content="Vantora Recruitment connects construction businesses with reliable workers and skilled tradespeople across the UK.">
 
 <style>
+
 * {
     margin: 0;
     padding: 0;
@@ -21,53 +22,50 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f3f4f6;
-    color: #111827;
+    background: #050505;
+    color: #ffffff;
     line-height: 1.6;
 }
 
 a {
-    color: inherit;
     text-decoration: none;
+    color: inherit;
 }
 
 .container {
-    width: min(1120px, 90%);
+    width: min(1100px, 90%);
     margin: auto;
 }
 
-/* NAVIGATION */
+/* =========================
+   NAVIGATION
+========================= */
 
 nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(255,255,255,.97);
-    border-bottom: 1px solid #d1d5db;
-    box-shadow: 0 2px 12px rgba(0,0,0,.05);
+    background: rgba(5,5,5,0.96);
+    border-bottom: 1px solid #292929;
     backdrop-filter: blur(10px);
 }
 
 .nav-container {
-    min-height: 78px;
+    min-height: 82px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo {
-    font-size: 21px;
-    font-weight: 900;
-    letter-spacing: 1px;
-    color: #111827;
+.nav-logo {
+    display: flex;
+    align-items: center;
 }
 
-.logo span {
+.nav-logo img {
+    width: 150px;
+    height: auto;
     display: block;
-    font-size: 11px;
-    color: #6b7280;
-    letter-spacing: 1.5px;
-    margin-top: 2px;
 }
 
 .nav-links {
@@ -78,88 +76,88 @@ nav {
 }
 
 .nav-links a {
-    color: #374151;
+    color: #ffffff;
     font-size: 14px;
     font-weight: 700;
-    transition: .2s ease;
+    transition: 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: #f59e0b;
+    color: #d9ad32;
 }
 
 .nav-button {
-    background: #111827;
-    color: #ffffff !important;
+    background: #d9ad32;
+    color: #050505 !important;
     padding: 11px 18px;
-    border-radius: 6px;
+    border-radius: 4px;
 }
 
 .nav-button:hover {
-    background: #f59e0b;
-    color: #111827 !important;
+    background: #ffffff;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero {
-    min-height: 720px;
+    min-height: 650px;
     display: flex;
     align-items: center;
+    text-align: center;
     position: relative;
     overflow: hidden;
-    background:
-        radial-gradient(circle at 85% 20%, rgba(245,158,11,.14), transparent 30%),
-        linear-gradient(135deg, #f8fafc 0%, #eef0f2 100%);
-}
 
-.hero::after {
-    content: "";
-    position: absolute;
-    right: -120px;
-    bottom: -180px;
-    width: 500px;
-    height: 500px;
-    border: 90px solid rgba(245,158,11,.07);
-    transform: rotate(45deg);
+    background:
+        radial-gradient(circle at 50% 20%, rgba(217,173,50,0.12), transparent 35%),
+        #050505;
 }
 
 .hero-content {
     max-width: 850px;
-    position: relative;
-    z-index: 2;
+    margin: auto;
+}
+
+.hero-logo {
+    width: 280px;
+    max-width: 75%;
+    margin: 0 auto 35px;
+    display: block;
 }
 
 .eyebrow {
-    color: #d97706;
+    color: #d9ad32;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 12px;
-    font-weight: 900;
-    margin-bottom: 22px;
+    letter-spacing: 4px;
+    font-size: 11px;
+    font-weight: 800;
+    margin-bottom: 18px;
 }
 
 .hero h1 {
-    font-size: clamp(46px,7vw,82px);
-    line-height: .98;
-    letter-spacing: -3px;
-    margin-bottom: 28px;
-    color: #111827;
+    font-size: clamp(42px, 7vw, 72px);
+    line-height: 1;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+    color: #ffffff;
 }
 
 .hero h1 span {
-    color: #4b5563;
+    color: #d9ad32;
 }
 
 .hero p {
-    max-width: 680px;
-    color: #374151;
-    font-size: 19px;
-    margin-bottom: 36px;
+    max-width: 650px;
+    margin: auto;
+    color: #c7c7c7;
+    font-size: 18px;
+    margin-bottom: 35px;
 }
 
 .buttons {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 14px;
 }
@@ -168,217 +166,169 @@ nav {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 24px;
-    border-radius: 6px;
+    padding: 15px 25px;
+    border-radius: 4px;
     font-weight: 800;
     font-size: 14px;
-    border: 1px solid #111827;
+    border: 1px solid #d9ad32;
     cursor: pointer;
-    transition: .2s ease;
+    transition: 0.2s ease;
 }
 
 .btn-primary {
-    background: #111827;
-    color: #ffffff;
+    background: #d9ad32;
+    color: #050505;
 }
 
 .btn-primary:hover {
-    background: #f59e0b;
-    border-color: #f59e0b;
-    color: #111827;
+    background: #ffffff;
+    border-color: #ffffff;
 }
 
 .btn-secondary {
-    background: #ffffff;
-    color: #111827;
-    border-color: #cbd5e1;
+    background: transparent;
+    color: #ffffff;
 }
 
 .btn-secondary:hover {
-    border-color: #f59e0b;
-    color: #b45309;
+    background: #d9ad32;
+    color: #050505;
 }
 
-/* GENERAL SECTIONS */
+/* =========================
+   GENERAL SECTIONS
+========================= */
 
 section {
-    padding: 110px 0;
-    border-bottom: 1px solid #d1d5db;
+    padding: 85px 0;
+    border-bottom: 1px solid #222222;
 }
 
 .section-label {
-    color: #d97706;
-    font-size: 12px;
+    color: #d9ad32;
+    font-size: 11px;
     font-weight: 900;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .section-title {
-    font-size: clamp(34px,5vw,54px);
+    font-size: clamp(32px, 5vw, 48px);
     line-height: 1.05;
-    letter-spacing: -1.5px;
-    margin-bottom: 20px;
-    color: #111827;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+    color: #ffffff;
 }
 
 .section-intro {
-    color: #4b5563;
-    max-width: 720px;
-    font-size: 17px;
+    color: #aaaaaa;
+    max-width: 650px;
+    font-size: 16px;
 }
 
-/* ROLES */
+/* =========================
+   SERVICES
+========================= */
 
-.roles {
-    background: #e9ecef;
+.services {
+    background: #080808;
 }
 
-.role-grid {
-    margin-top: 50px;
+.service-grid {
+    margin-top: 40px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 14px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
 }
 
-.role {
-    padding: 28px 24px;
-    min-height: 135px;
-    border: 1px solid #d1d5db;
-    border-radius: 7px;
-    background: #ffffff;
-    box-shadow: 0 3px 12px rgba(0,0,0,.04);
-    transition: .2s ease;
+.service {
+    padding: 30px 25px;
+    border: 1px solid #292929;
+    border-top: 3px solid #d9ad32;
+    border-radius: 5px;
+    background: #0d0d0d;
+    transition: 0.2s ease;
 }
 
-.role:hover {
-    transform: translateY(-3px);
-    border-color: #f59e0b;
-    box-shadow: 0 8px 20px rgba(0,0,0,.07);
+.service:hover {
+    transform: translateY(-4px);
+    border-color: #d9ad32;
 }
 
-.role-number {
-    color: #f59e0b;
+.service-number {
+    color: #d9ad32;
     font-size: 11px;
     font-weight: 900;
     margin-bottom: 12px;
 }
 
-.role h3 {
-    font-size: 16px;
-    color: #111827;
+.service h3 {
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-size: 18px;
 }
 
-.role p {
-    color: #6b7280;
-    font-size: 13px;
-    margin-top: 5px;
+.service p {
+    color: #999999;
+    font-size: 14px;
 }
 
-/* ABOUT */
+/* =========================
+   EMPLOYER / CANDIDATE CHOICES
+========================= */
 
-.about-grid {
+.choice-section {
+    background: #050505;
+}
+
+.choice-grid {
+    margin-top: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 70px;
+    gap: 20px;
 }
 
-.about-text p {
-    color: #4b5563;
-    font-size: 17px;
-    margin-top: 20px;
+.choice {
+    padding: 40px;
+    border: 1px solid #292929;
+    background: #0b0b0b;
+    border-radius: 5px;
 }
 
-.values {
-    display: grid;
-    gap: 14px;
+.choice h3 {
+    color: #d9ad32;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.value {
-    border: 1px solid #d1d5db;
-    border-left: 4px solid #f59e0b;
-    border-radius: 6px;
-    padding: 25px;
-    background: #ffffff;
-    box-shadow: 0 3px 12px rgba(0,0,0,.04);
+.choice p {
+    color: #aaaaaa;
+    margin-bottom: 25px;
 }
 
-.value span {
-    color: #d97706;
-    font-size: 12px;
-    font-weight: 900;
-}
-
-.value h3 {
-    margin-top: 8px;
-    color: #111827;
-}
-
-.value p {
-    color: #6b7280;
-    font-size: 14px;
-}
-
-/* EMPLOYERS */
-
-.employer {
-    background: #e9ecef;
-}
-
-.steps {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 16px;
-}
-
-.step {
-    border: 1px solid #d1d5db;
-    border-top: 4px solid #f59e0b;
-    border-radius: 6px;
-    padding: 32px 26px;
-    background: #ffffff;
-    box-shadow: 0 3px 12px rgba(0,0,0,.04);
-}
-
-.step-number {
-    font-size: 13px;
-    color: #d97706;
-    font-weight: 900;
-}
-
-.step h3 {
-    margin: 25px 0 8px;
-    color: #111827;
-}
-
-.step p {
-    color: #6b7280;
-    font-size: 14px;
-}
-
-/* FORMS */
+/* =========================
+   FORMS
+========================= */
 
 .form-section {
-    background: #f8fafc;
+    background: #090909;
 }
 
 .form-box {
     max-width: 850px;
-    margin: 45px auto 0;
-    background: #ffffff;
-    border: 1px solid #d1d5db;
-    border-top: 4px solid #f59e0b;
-    border-radius: 7px;
-    padding: 40px;
-    box-shadow: 0 8px 25px rgba(0,0,0,.06);
+    margin: 40px auto 0;
+    background: #0d0d0d;
+    border: 1px solid #292929;
+    border-top: 3px solid #d9ad32;
+    border-radius: 5px;
+    padding: 35px;
 }
 
 .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 18px;
 }
 
 .form-group {
@@ -391,38 +341,40 @@ section {
 }
 
 .form-group label {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 800;
-    color: #374151;
-    margin-bottom: 8px;
+    color: #dddddd;
+    margin-bottom: 7px;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
     width: 100%;
-    padding: 13px 14px;
-    border: 1px solid #cbd5e1;
-    border-radius: 5px;
-    background: #f8fafc;
-    color: #111827;
+    padding: 13px;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    background: #050505;
+    color: #ffffff;
     font-family: inherit;
     font-size: 14px;
     outline: none;
-    transition: .2s ease;
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    border-color: #f59e0b;
-    background: #ffffff;
-    box-shadow: 0 0 0 3px rgba(245,158,11,.12);
+    border-color: #d9ad32;
 }
 
 .form-group textarea {
-    min-height: 130px;
+    min-height: 120px;
     resize: vertical;
+}
+
+.form-group select option {
+    background: #050505;
+    color: #ffffff;
 }
 
 .form-submit {
@@ -430,231 +382,107 @@ section {
 }
 
 .form-note {
-    color: #6b7280;
-    font-size: 12px;
-    margin-top: 15px;
+    color: #777777;
+    font-size: 11px;
+    margin-top: 12px;
 }
 
-/* CANDIDATES */
-
-.candidate-box {
-    border: 1px solid #d1d5db;
-    border-left: 5px solid #f59e0b;
-    border-radius: 7px;
-    padding: 55px;
-    background: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    box-shadow: 0 6px 20px rgba(0,0,0,.05);
-}
-
-.candidate-box p {
-    color: #4b5563;
-    max-width: 650px;
-}
-
-/* SERVICES */
-
-.service-grid {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 16px;
-}
-
-.service {
-    border: 1px solid #d1d5db;
-    border-radius: 7px;
-    padding: 32px;
-    background: #ffffff;
-    box-shadow: 0 3px 12px rgba(0,0,0,.04);
-    transition: .2s ease;
-}
-
-.service:hover {
-    border-color: #f59e0b;
-    transform: translateY(-3px);
-}
-
-.service h3 {
-    margin-bottom: 10px;
-    color: #111827;
-}
-
-.service p {
-    color: #6b7280;
-    font-size: 14px;
-}
-
-/* WHY */
-
-.why-grid {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 16px;
-}
-
-.why {
-    padding: 28px 22px;
-    border-top: 4px solid #f59e0b;
-    border-radius: 5px;
-    background: #ffffff;
-    box-shadow: 0 3px 12px rgba(0,0,0,.04);
-}
-
-.why h3 {
-    margin-bottom: 8px;
-    color: #111827;
-}
-
-.why p {
-    color: #6b7280;
-    font-size: 14px;
-}
-
-/* CONTACT */
+/* =========================
+   CONTACT
+========================= */
 
 .contact {
-    background: #e9ecef;
+    background: #050505;
+    text-align: center;
 }
 
-.contact-grid {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
+.contact-content {
+    max-width: 700px;
+    margin: auto;
 }
 
-.contact-card {
-    border: 1px solid #d1d5db;
-    border-radius: 7px;
-    padding: 30px;
-    background: #ffffff;
-    box-shadow: 0 3px 12px rgba(0,0,0,.04);
+.contact-content .section-intro {
+    margin: 0 auto 30px;
 }
 
-.contact-card h3 {
-    margin-bottom: 8px;
-    color: #111827;
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
 }
 
-.contact-card p {
-    color: #6b7280;
-    font-size: 14px;
-}
-
-.contact-card a {
-    display: inline-block;
-    margin-top: 12px;
-    font-weight: 800;
-    color: #b45309;
-}
-
-.contact-card a:hover {
-    color: #111827;
-}
-
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
-    padding: 55px 0 30px;
-    background: #111827;
-    color: #ffffff;
-}
-
-.footer-brand .logo {
-    color: #ffffff;
-}
-
-.footer-brand .logo span {
-    color: #9ca3af;
-}
-
-.footer-brand p {
-    color: #9ca3af;
-    font-size: 13px;
-    margin-top: 8px;
+    background: #000000;
+    border-top: 1px solid #222222;
+    padding: 40px 0 25px;
 }
 
 .footer-top {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
-    padding-bottom: 35px;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-logo {
+    width: 170px;
+}
+
+.footer-brand p {
+    color: #777777;
+    font-size: 12px;
+    margin-top: 8px;
 }
 
 .footer-links {
     display: flex;
-    gap: 55px;
+    gap: 25px;
 }
 
-.footer-column h4 {
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 14px;
-    color: #f59e0b;
-}
-
-.footer-column a {
-    display: block;
-    color: #d1d5db;
+.footer-links a {
+    color: #aaaaaa;
     font-size: 13px;
-    margin-bottom: 8px;
-    transition: .2s ease;
 }
 
-.footer-column a:hover {
-    color: #f59e0b;
+.footer-links a:hover {
+    color: #d9ad32;
 }
 
 .footer-bottom {
-    border-top: 1px solid #374151;
-    padding-top: 25px;
-    color: #6b7280;
-    font-size: 12px;
+    border-top: 1px solid #222222;
+    margin-top: 30px;
+    padding-top: 20px;
+    color: #666666;
+    font-size: 11px;
 }
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
 
-@media (max-width:850px) {
+@media (max-width: 800px) {
 
     .nav-links {
         display: none;
     }
 
     .hero {
-        min-height: 650px;
+        min-height: 600px;
     }
 
-    .role-grid {
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    .about-grid,
-    .steps,
-    .contact-grid {
+    .service-grid,
+    .choice-grid {
         grid-template-columns: 1fr;
-    }
-
-    .service-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .why-grid {
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    .candidate-box {
-        flex-direction: column;
-        align-items: flex-start;
     }
 
     .footer-top {
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .footer-links {
@@ -662,14 +490,18 @@ footer {
     }
 }
 
-@media (max-width:550px) {
+@media (max-width: 550px) {
 
     section {
-        padding: 80px 0;
+        padding: 65px 0;
+    }
+
+    .hero-logo {
+        width: 230px;
     }
 
     .hero h1 {
-        font-size: 46px;
+        font-size: 42px;
     }
 
     .hero p {
@@ -684,8 +516,6 @@ footer {
         width: 100%;
     }
 
-    .role-grid,
-    .why-grid,
     .form-grid {
         grid-template-columns: 1fr;
     }
@@ -695,43 +525,49 @@ footer {
     }
 
     .form-box {
-        padding: 25px;
+        padding: 22px;
     }
 
-    .candidate-box {
+    .choice {
         padding: 30px;
     }
 }
+
 </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+<!-- =========================
+     NAVIGATION
+========================= -->
 
 <nav>
+
 <div class="container nav-container">
 
-<a href="#home" class="logo">
-VANTORA RECRUITMENT
-<span>CONSTRUCTION & SKILLED TRADES</span>
+<a href="#home" class="nav-logo">
+<img src="logo.png" alt="Vantora Recruitment">
 </a>
 
 <ul class="nav-links">
 <li><a href="#about">About</a></li>
-<li><a href="#employers">Employers</a></li>
-<li><a href="#candidates">Candidates</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#contact" class="nav-button">Contact Us</a></li>
+<li><a href="#employer-form">Employers</a></li>
+<li><a href="#candidate-form">Candidates</a></li>
+<li><a href="#contact" class="nav-button">Contact</a></li>
 </ul>
 
 </div>
+
 </nav>
 
 
 <main id="home">
 
-<!-- HERO -->
+
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero">
 
@@ -739,18 +575,20 @@ VANTORA RECRUITMENT
 
 <div class="hero-content">
 
+<img src="logo.png" alt="Vantora Recruitment" class="hero-logo">
+
 <div class="eyebrow">
-Construction & Skilled Trades Recruitment
+Construction & Skilled Trades
 </div>
 
 <h1>
-Construction Recruitment,
-<span>Built Around Your Business.</span>
+Reliable People.
+<span>The Right Jobs.</span>
 </h1>
 
 <p>
-Connecting construction companies with reliable workers
-and skilled tradespeople across the UK.
+Vantora Recruitment connects construction businesses
+with reliable workers and skilled tradespeople across the UK.
 </p>
 
 <div class="buttons">
@@ -760,6 +598,155 @@ Request Workers
 </a>
 
 <a href="#candidate-form" class="btn btn-secondary">
+Find Work
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="section-label">
+About Vantora
+</div>
+
+<h2 class="section-title">
+Built for Construction.
+</h2>
+
+<p class="section-intro">
+We connect construction companies with suitable workers
+and skilled tradespeople for temporary, contract and
+permanent opportunities.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="services">
+
+<div class="container">
+
+<div class="section-label">
+What We Do
+</div>
+
+<h2 class="section-title">
+Recruitment Made Simple.
+</h2>
+
+<div class="service-grid">
+
+<div class="service">
+
+<div class="service-number">01</div>
+
+<h3>Skilled Trades</h3>
+
+<p>
+Electricians, plumbers, bricklayers,
+carpenters, groundworkers and more.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-number">02</div>
+
+<h3>Construction Labour</h3>
+
+<p>
+Reliable labourers and site operatives
+for construction projects.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-number">03</div>
+
+<h3>Flexible Staffing</h3>
+
+<p>
+Temporary, contract and permanent
+recruitment solutions.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     TWO OPTIONS
+========================= -->
+
+<section class="choice-section">
+
+<div class="container">
+
+<div class="section-label">
+Get Started
+</div>
+
+<h2 class="section-title">
+What Are You Looking For?
+</h2>
+
+<div class="choice-grid">
+
+<div class="choice">
+
+<h3>Need Workers?</h3>
+
+<p>
+Tell us what workers or trades you need,
+where they're needed and when you need them.
+</p>
+
+<a href="#employer-form" class="btn btn-primary">
+Request Workers
+</a>
+
+</div>
+
+
+<div class="choice">
+
+<h3>Looking for Work?</h3>
+
+<p>
+Register your details and tell us about your
+experience and the type of work you want.
+</p>
+
+<a href="#candidate-form" class="btn btn-primary">
 Find Construction Work
 </a>
 
@@ -772,232 +759,27 @@ Find Construction Work
 </section>
 
 
-<!-- ROLES -->
-
-<section class="roles">
-
-<div class="container">
-
-<div class="section-label">
-What We Recruit
-</div>
-
-<h2 class="section-title">
-Construction Roles
-</h2>
-
-<p class="section-intro">
-We connect construction businesses with workers and
-professionals across a range of construction trades.
-</p>
-
-<div class="role-grid">
-
-<div class="role">
-<div class="role-number">01</div>
-<h3>Labourers</h3>
-<p>General site labour and support.</p>
-</div>
-
-<div class="role">
-<div class="role-number">02</div>
-<h3>Groundworkers</h3>
-<p>Groundworks and site preparation.</p>
-</div>
-
-<div class="role">
-<div class="role-number">03</div>
-<h3>Bricklayers</h3>
-<p>Experienced brickwork professionals.</p>
-</div>
-
-<div class="role">
-<div class="role-number">04</div>
-<h3>Carpenters</h3>
-<p>First and second fix carpentry.</p>
-</div>
-
-<div class="role">
-<div class="role-number">05</div>
-<h3>Electricians</h3>
-<p>Electrical trades and site work.</p>
-</div>
-
-<div class="role">
-<div class="role-number">06</div>
-<h3>Plumbers</h3>
-<p>Plumbing and mechanical trades.</p>
-</div>
-
-<div class="role">
-<div class="role-number">07</div>
-<h3>Scaffolders</h3>
-<p>Scaffolding and access specialists.</p>
-</div>
-
-<div class="role">
-<div class="role-number">08</div>
-<h3>Site Operatives</h3>
-<p>Experienced construction site workers.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ABOUT -->
-
-<section id="about">
-
-<div class="container">
-
-<div class="about-grid">
-
-<div class="about-text">
-
-<div class="section-label">
-01 — About Vantora
-</div>
-
-<h2 class="section-title">
-Construction Recruitment
-That Gets the Job Done.
-</h2>
-
-<p>
-Vantora Recruitment connects construction
-businesses with reliable workers and skilled
-professionals across a range of trades.
-</p>
-
-<p>
-We focus on understanding your project
-requirements and matching you with suitable
-people for the job.
-</p>
-
-</div>
-
-<div class="values">
-
-<div class="value">
-<span>01</span>
-<h3>Construction Focused</h3>
-<p>
-Recruitment solutions designed around
-the construction industry.
-</p>
-</div>
-
-<div class="value">
-<span>02</span>
-<h3>Reliable Candidates</h3>
-<p>
-Connecting businesses with workers
-suited to their requirements.
-</p>
-</div>
-
-<div class="value">
-<span>03</span>
-<h3>Flexible Staffing</h3>
-<p>
-Support for temporary, contract and
-permanent recruitment.
-</p>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- EMPLOYERS -->
-
-<section id="employers" class="employer">
-
-<div class="container">
-
-<div class="section-label">
-02 — Employers
-</div>
-
-<h2 class="section-title">
-Need Workers for Your Next Project?
-</h2>
-
-<p class="section-intro">
-Tell us what workers or trades you need, where they're
-needed and when you need them.
-</p>
-
-<div class="steps">
-
-<div class="step">
-<div class="step-number">01</div>
-<h3>Tell Us What You Need</h3>
-<p>
-Share the trade, role, location, number of
-workers and start date.
-</p>
-</div>
-
-<div class="step">
-<div class="step-number">02</div>
-<h3>We Source Candidates</h3>
-<p>
-We identify candidates who match your
-requirements.
-</p>
-</div>
-
-<div class="step">
-<div class="step-number">03</div>
-<h3>Meet Your Workers</h3>
-<p>
-Suitable candidates are introduced to
-your business.
-</p>
-</div>
-
-</div>
-
-<div style="margin-top:40px;">
-<a href="#employer-form" class="btn btn-primary">
-Request Workers
-</a>
-</div>
-
-</div>
-
-</section>
-
-
-<!-- EMPLOYER FORM -->
+<!-- =========================
+     EMPLOYER FORM
+========================= -->
 
 <section id="employer-form" class="form-section">
 
 <div class="container">
 
 <div class="section-label">
-Employer Enquiry
+Employers
 </div>
 
 <h2 class="section-title">
-Request Construction Workers
+Request Workers
 </h2>
 
 <p class="section-intro">
 Tell us what your business needs and we'll contact you
 to discuss your requirements.
 </p>
+
 
 <div class="form-box">
 
@@ -1035,7 +817,9 @@ to discuss your requirements.
 
 <div class="form-group">
 <label>Role / Trade Required *</label>
+
 <select name="trade_required" required>
+
 <option value="">Select a role</option>
 <option>Labourer</option>
 <option>Groundworker</option>
@@ -1046,7 +830,9 @@ to discuss your requirements.
 <option>Scaffolder</option>
 <option>Site Operative</option>
 <option>Other</option>
+
 </select>
+
 </div>
 
 <div class="form-group">
@@ -1061,7 +847,9 @@ to discuss your requirements.
 
 <div class="form-group">
 <label>Duration</label>
+
 <select name="duration">
+
 <option value="">Select</option>
 <option>1 Day</option>
 <option>Several Days</option>
@@ -1069,7 +857,9 @@ to discuss your requirements.
 <option>1–3 Months</option>
 <option>3+ Months</option>
 <option>Permanent</option>
+
 </select>
+
 </div>
 
 <div class="form-group">
@@ -1079,15 +869,22 @@ to discuss your requirements.
 
 <div class="form-group full">
 <label>Additional Requirements</label>
-<textarea name="additional_requirements" placeholder="Tell us anything else we should know..."></textarea>
+
+<textarea
+name="additional_requirements"
+placeholder="Tell us anything else we should know..."
+></textarea>
+
 </div>
 
 </div>
 
 <div class="form-submit">
+
 <button type="submit" class="btn btn-primary">
 Submit Worker Request
 </button>
+
 </div>
 
 <p class="form-note">
@@ -1103,61 +900,27 @@ By submitting this form, you are requesting contact from Vantora Recruitment reg
 </section>
 
 
-<!-- CANDIDATES -->
-
-<section id="candidates">
-
-<div class="container">
-
-<div class="section-label">
-03 — Candidates
-</div>
-
-<div class="candidate-box">
-
-<div>
-
-<h2 class="section-title">
-Looking for Construction Work?
-</h2>
-
-<p>
-Register your details with Vantora Recruitment
-and we'll contact you when suitable construction
-opportunities are available.
-</p>
-
-</div>
-
-<a href="#candidate-form" class="btn btn-primary">
-Register as a Candidate
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- CANDIDATE FORM -->
+<!-- =========================
+     CANDIDATE FORM
+========================= -->
 
 <section id="candidate-form" class="form-section">
 
 <div class="container">
 
 <div class="section-label">
-Candidate Registration
+Candidates
 </div>
 
 <h2 class="section-title">
-Register With Vantora
+Find Construction Work
 </h2>
 
 <p class="section-intro">
-Tell us about yourself and the type of construction work
-you're looking for.
+Register your details and tell us about your experience
+and the work you're looking for.
 </p>
+
 
 <div class="form-box">
 
@@ -1190,7 +953,9 @@ you're looking for.
 
 <div class="form-group">
 <label>Main Trade *</label>
+
 <select name="trade" required>
+
 <option value="">Select your trade</option>
 <option>Labourer</option>
 <option>Groundworker</option>
@@ -1201,54 +966,76 @@ you're looking for.
 <option>Scaffolder</option>
 <option>Site Operative</option>
 <option>Other</option>
+
 </select>
+
 </div>
 
 <div class="form-group">
 <label>Years of Experience</label>
+
 <select name="experience">
+
 <option value="">Select</option>
 <option>Less than 1 year</option>
 <option>1–2 years</option>
 <option>3–5 years</option>
 <option>5–10 years</option>
 <option>10+ years</option>
+
 </select>
+
 </div>
 
 <div class="form-group">
 <label>CSCS / Relevant Card</label>
+
 <select name="cscs">
+
 <option value="">Select</option>
 <option>Yes</option>
 <option>No</option>
 <option>Other card</option>
+
 </select>
+
 </div>
 
 <div class="form-group">
 <label>Availability</label>
+
 <select name="availability">
+
 <option value="">Select</option>
 <option>Immediately</option>
 <option>Within 1 week</option>
 <option>Within 2 weeks</option>
 <option>Within 1 month</option>
 <option>Other</option>
+
 </select>
+
 </div>
 
 <div class="form-group full">
+
 <label>Tell Us About Your Experience</label>
-<textarea name="experience_details" placeholder="Briefly describe your experience, skills and the type of work you're looking for..."></textarea>
+
+<textarea
+name="experience_details"
+placeholder="Briefly describe your experience, skills and the type of work you're looking for..."
+></textarea>
+
 </div>
 
 </div>
 
 <div class="form-submit">
+
 <button type="submit" class="btn btn-primary">
 Submit Registration
 </button>
+
 </div>
 
 <p class="form-note">
@@ -1264,187 +1051,44 @@ By submitting this form, you are registering your interest in construction oppor
 </section>
 
 
-<!-- SERVICES -->
-
-<section id="services" class="roles">
-
-<div class="container">
-
-<div class="section-label">
-04 — Services
-</div>
-
-<h2 class="section-title">
-Construction Recruitment Services
-</h2>
-
-<p class="section-intro">
-Flexible recruitment solutions for construction
-businesses and projects.
-</p>
-
-<div class="service-grid">
-
-<div class="service">
-<h3>Skilled Trades</h3>
-<p>
-Connecting businesses with skilled tradespeople
-across construction and related industries.
-</p>
-</div>
-
-<div class="service">
-<h3>Construction Labour</h3>
-<p>
-Labourers and site workers for construction
-projects and ongoing site requirements.
-</p>
-</div>
-
-<div class="service">
-<h3>Temporary Staffing</h3>
-<p>
-Flexible staffing solutions for short-term
-and project-based requirements.
-</p>
-</div>
-
-<div class="service">
-<h3>Permanent Recruitment</h3>
-<p>
-Helping construction businesses find people
-for long-term positions.
-</p>
-</div>
-
-<div class="service">
-<h3>Contract Recruitment</h3>
-<p>
-Recruitment support for specific projects,
-contracts and temporary requirements.
-</p>
-</div>
-
-<div class="service">
-<h3>Candidate Sourcing</h3>
-<p>
-Identifying suitable candidates based on
-your role and project requirements.
-</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- WHY VANTORA -->
-
-<section>
-
-<div class="container">
-
-<div class="section-label">
-Why Vantora
-</div>
-
-<h2 class="section-title">
-Built for Construction.
-</h2>
-
-<p class="section-intro">
-Professional recruitment support focused on the
-people construction businesses need.
-</p>
-
-<div class="why-grid">
-
-<div class="why">
-<h3>Construction Focused</h3>
-<p>
-Recruitment centred around construction
-workers and skilled trades.
-</p>
-</div>
-
-<div class="why">
-<h3>Responsive</h3>
-<p>
-Clear communication throughout the
-recruitment process.
-</p>
-</div>
-
-<div class="why">
-<h3>Flexible</h3>
-<p>
-Temporary, contract and permanent
-recruitment options.
-</p>
-</div>
-
-<div class="why">
-<h3>Professional</h3>
-<p>
-A straightforward recruitment service
-for employers and candidates.
-</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- CONTACT -->
+<!-- =========================
+     CONTACT
+========================= -->
 
 <section id="contact" class="contact">
 
 <div class="container">
 
+<div class="contact-content">
+
 <div class="section-label">
-05 — Contact
+Contact Vantora
 </div>
 
 <h2 class="section-title">
-Need Construction Staff?
-Let's Talk.
+Let's Build Your Tomorrow.
 </h2>
 
 <p class="section-intro">
-Tell us what you're looking for and we'll get back to you.
+Need workers or looking for your next construction opportunity?
+Get in touch with Vantora Recruitment.
 </p>
 
-<div class="contact-grid">
+<div class="contact-buttons">
 
-<div class="contact-card">
-
-<h3>Email</h3>
-
-<p>
-Send us your recruitment requirements.
-</p>
-
-<a href="mailto:vantorarecruitment@gmail.com">
-vantorarecruitment@gmail.com
+<a
+href="mailto:vantorarecruitment@gmail.com"
+class="btn btn-primary"
+>
+Email Us
 </a>
 
-</div>
-
-<div class="contact-card">
-
-<h3>WhatsApp</h3>
-
-<p>
-Contact Vantora Recruitment directly.
-</p>
-
-<a href="https://wa.me/447840135214" target="_blank">
-Message Us on WhatsApp
+<a
+href="https://wa.me/447840135214"
+target="_blank"
+class="btn btn-secondary"
+>
+WhatsApp Us
 </a>
 
 </div>
@@ -1458,7 +1102,9 @@ Message Us on WhatsApp
 </main>
 
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -1468,53 +1114,42 @@ Message Us on WhatsApp
 
 <div class="footer-brand">
 
-<div class="logo">
-VANTORA RECRUITMENT
-<span>CONSTRUCTION & SKILLED TRADES</span>
-</div>
+<img
+src="logo.png"
+alt="Vantora Recruitment"
+class="footer-logo"
+>
 
 <p>
-Connecting construction businesses with
-workers and skilled tradespeople.
+Construction & Skilled Trades Recruitment
 </p>
 
 </div>
 
 <div class="footer-links">
 
-<div class="footer-column">
-
-<h4>Employers</h4>
-
-<a href="#employers">Request Workers</a>
-<a href="#employer-form">Employer Form</a>
-
-</div>
-
-<div class="footer-column">
-
-<h4>Candidates</h4>
-
-<a href="#candidates">Find Construction Work</a>
-<a href="#candidate-form">Register</a>
-
-</div>
-
-<div class="footer-column">
-
-<h4>Company</h4>
-
 <a href="#about">About</a>
-<a href="#contact">Contact</a>
 
-</div>
+<a href="#employer-form">
+Request Workers
+</a>
+
+<a href="#candidate-form">
+Find Work
+</a>
+
+<a href="#contact">
+Contact
+</a>
 
 </div>
 
 </div>
 
 <div class="footer-bottom">
+
 © 2026 Vantora Recruitment. All rights reserved.
+
 </div>
 
 </div>
