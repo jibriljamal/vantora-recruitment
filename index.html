@@ -67,14 +67,8 @@ nav {
     min-height: 82px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
-}
-
-.nav-logo img {
-    width: 150px;
-    height: auto;
-    display: block;
 }
 
 .nav-links {
@@ -116,9 +110,7 @@ nav {
     min-height: 700px;
     display: flex;
     align-items: center;
-    background:
-        linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.82)),
-        radial-gradient(circle at center, #252525, #080808);
+    background: radial-gradient(circle at center, #252525, #080808);
 }
 
 .hero-content {
@@ -401,9 +393,7 @@ section {
 ========================= */
 
 .contact {
-    background:
-        linear-gradient(rgba(0,0,0,0.88), rgba(0,0,0,0.88)),
-        #171717;
+    background: #171717;
     text-align: center;
 }
 
@@ -485,35 +475,13 @@ footer {
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    align-items: center;
-}
-
-.footer-logo img {
-    width: 130px;
-    height: auto;
-    margin-bottom: 12px;
+    justify-content: center;
+    text-align: center;
 }
 
 .footer-text {
     color: #888888;
     font-size: 14px;
-}
-
-.footer-links {
-    display: flex;
-    gap: 22px;
-    flex-wrap: wrap;
-}
-
-.footer-links a {
-    color: #aaaaaa;
-    font-size: 14px;
-}
-
-.footer-links a:hover {
-    color: #d4af37;
 }
 
 .footer-bottom {
@@ -537,10 +505,6 @@ footer {
         padding: 14px 0;
         flex-direction: column;
         gap: 12px;
-    }
-
-    .nav-logo img {
-        width: 135px;
     }
 
     .nav-links {
@@ -607,10 +571,6 @@ footer {
         text-align: center;
     }
 
-    .footer-links {
-        justify-content: center;
-    }
-
     .whatsapp-float {
         width: 56px;
         height: 56px;
@@ -662,15 +622,11 @@ footer {
 <nav>
     <div class="container nav-container">
 
-        <!-- LOGO 1: HEADER -->
-        <a href="#home" class="nav-logo" aria-label="Vantora Recruitment Home">
-            <img src="logo.PNG" alt="Vantora Recruitment Logo">
-        </a>
-
         <div class="nav-links">
             <a href="#about">About</a>
-            <a href="#services">Employers</a>
+            <a href="#employers">Employers</a>
             <a href="#candidates">Candidates</a>
+            <a href="#services">Services</a>
             <a href="#contact" class="nav-button">Contact</a>
         </div>
 
@@ -704,6 +660,7 @@ footer {
             </p>
 
             <div class="hero-buttons">
+
                 <a href="#employers" class="btn btn-primary">
                     Request Workers
                 </a>
@@ -711,6 +668,7 @@ footer {
                 <a href="#candidates" class="btn btn-secondary">
                     Find Work
                 </a>
+
             </div>
 
         </div>
@@ -961,7 +919,6 @@ footer {
                 <input type="hidden" name="_captcha" value="false">
 
                 <div class="form-grid">
-
 
                     <div class="form-group">
                         <label for="company_name">
@@ -1426,44 +1383,12 @@ footer {
 
         <div class="footer-content">
 
-
-            <!-- LOGO 2: FOOTER -->
-
             <div>
 
-                <a href="#home" class="footer-logo">
-
-                    <img
-                        src="logo.PNG"
-                        alt="Vantora Recruitment Logo"
-                    >
-
-                </a>
-
                 <p class="footer-text">
+                    Vantora Recruitment<br>
                     Reliable people. The right jobs.
                 </p>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <a href="#about">
-                    About
-                </a>
-
-                <a href="#services">
-                    Employers
-                </a>
-
-                <a href="#candidates">
-                    Candidates
-                </a>
-
-                <a href="#contact">
-                    Contact
-                </a>
 
             </div>
 
