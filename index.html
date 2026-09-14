@@ -380,6 +380,38 @@ section {
 }
 
 /* =========================
+   CV EMAIL NOTICE
+========================= */
+
+.cv-notice {
+    margin-top: 25px;
+    padding: 20px;
+    background: #151515;
+    border-left: 3px solid #d4af37;
+    border-radius: 5px;
+}
+
+.cv-notice h3 {
+    color: #d4af37;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.cv-notice p {
+    color: #cccccc;
+    font-size: 15px;
+}
+
+.cv-notice a {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+.cv-notice a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
    CONTACT
 ========================= */
 
@@ -973,382 +1005,4 @@ footer {
                         >
                     </div>
 
-                    <div class="form-group">
-                        <label for="number_of_workers">
-                            Number Of Workers
-                        </label>
-
-                        <input
-                            type="number"
-                            id="number_of_workers"
-                            name="number_of_workers"
-                            min="1"
-                            required
-                        >
-                    </div>
-
-                    <div class="form-group">
-                        <label for="start_date">
-                            Start Date
-                        </label>
-
-                        <input
-                            type="date"
-                            id="start_date"
-                            name="start_date"
-                            required
-                        >
-                    </div>
-
-                    <div class="form-group">
-                        <label for="duration">
-                            Expected Duration
-                        </label>
-
-                        <input
-                            type="text"
-                            id="duration"
-                            name="duration"
-                            placeholder="e.g. 3 months"
-                        >
-                    </div>
-
-                    <div class="form-group">
-                        <label for="qualification">
-                            Required Qualifications
-                        </label>
-
-                        <input
-                            type="text"
-                            id="qualification"
-                            name="qualification"
-                            placeholder="e.g. CSCS"
-                        >
-                    </div>
-
-                    <div class="form-group full">
-                        <label for="additional_requirements">
-                            Additional Requirements
-                        </label>
-
-                        <textarea
-                            id="additional_requirements"
-                            name="additional_requirements"
-                            placeholder="Tell us anything else we need to know..."
-                        ></textarea>
-                    </div>
-
-                </div>
-
-                <div class="form-submit">
-
-                    <button
-                        type="submit"
-                        class="btn btn-primary"
-                    >
-                        Submit Request
-                    </button>
-
-                </div>
-
-            </form>
-
-        </div>
-
-        <!-- CANDIDATE FORM -->
-
-        <div id="candidates" class="form-wrapper">
-
-            <div class="eyebrow">
-                Candidates
-            </div>
-
-            <h2 class="form-title">
-                Find Work
-            </h2>
-
-            <p class="form-description">
-                Register your details with Vantora Recruitment and
-                tell us what type of work you're looking for.
-            </p>
-
-            <form action="https://formsubmit.co/vantorarecruitment@gmail.com" method="POST">
-
-                <input type="hidden" name="_subject" value="New Candidate Registration - Vantora Recruitment">
-                <input type="hidden" name="_captcha" value="false">
-
-                <div class="form-grid">
-
-                    <div class="form-group">
-                        <label for="full_name">
-                            Full Name
-                        </label>
-
-                        <input
-                            type="text"
-                            id="full_name"
-                            name="full_name"
-                            required
-                        >
-                    </div>
-
-                    <div class="form-group">
-                        <label for="candidate_phone">
-                            Phone
-                        </label>
-
-                        <input
-                            type="tel"
-                            id="candidate_phone"
-                            name="phone"
-                            required
-                        >
-                    </div>
-
-                    <div class="form-group">
-                        <label for="candidate_email">
-                            Email
-                        </label>
-
-                        <input
-                            type="email"
-                            id="candidate_email"
-                            name="email"
-                            required
-                        >
-                    </div>
-
-                    <div class="form-group">
-                        <label for="location">
-                            Location
-                        </label>
-
-                        <input
-                            type="text"
-                            id="location"
-                            name="location"
-                            placeholder="Town / City"
-                            required
-                        >
-                    </div>
-
-                    <div class="form-group">
-                        <label for="trade">
-                            Trade
-                        </label>
-
-                        <input
-                            type="text"
-                            id="trade"
-                            name="trade"
-                            placeholder="e.g. Labourer, Electrician"
-                            required
-                        >
-                    </div>
-
-                    <div class="form-group">
-                        <label for="experience">
-                            Years Of Experience
-                        </label>
-
-                        <input
-                            type="number"
-                            id="experience"
-                            name="experience"
-                            min="0"
-                            required
-                        >
-                    </div>
-
-                    <div class="form-group">
-                        <label for="cscs">
-                            CSCS / Relevant Card
-                        </label>
-
-                        <input
-                            type="text"
-                            id="cscs"
-                            name="cscs"
-                            placeholder="e.g. Green Labourer Card"
-                        >
-                    </div>
-
-                    <div class="form-group">
-                        <label for="availability">
-                            Availability
-                        </label>
-
-                        <input
-                            type="text"
-                            id="availability"
-                            name="availability"
-                            placeholder="e.g. Immediately"
-                            required
-                        >
-                    </div>
-
-                    <div class="form-group full">
-                        <label for="experience_details">
-                            Experience Details
-                        </label>
-
-                        <textarea
-                            id="experience_details"
-                            name="experience_details"
-                            placeholder="Tell us about your experience and the type of work you are looking for..."
-                        ></textarea>
-                    </div>
-
-                </div>
-
-                <div class="form-submit">
-
-                    <button
-                        type="submit"
-                        class="btn btn-primary"
-                    >
-                        Submit Details
-                    </button>
-
-                </div>
-
-            </form>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- =========================
-     CONTACT
-========================= -->
-
-<section id="contact" class="contact">
-
-    <div class="container">
-
-        <div class="contact-content">
-
-            <div class="eyebrow">
-                Get In Touch
-            </div>
-
-            <h2 class="section-title">
-                Let's Build Your Tomorrow.
-            </h2>
-
-            <p>
-                Need workers or looking for your next construction
-                opportunity? Get in touch with Vantora Recruitment.
-            </p>
-
-            <div class="contact-buttons">
-
-                <a
-                    href="mailto:vantorarecruitment@gmail.com?subject=Vantora Recruitment Enquiry"
-                    class="btn btn-primary"
-                >
-                    Email Us
-                </a>
-
-                <a
-                    href="tel:+447840135214"
-                    class="btn btn-secondary"
-                >
-                    Call Us
-                </a>
-
-                <a
-                    href="https://wa.me/447840135214?text=Hello%20Vantora%20Recruitment%2C%20I%27d%20like%20to%20make%20an%20enquiry."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn btn-secondary"
-                >
-                    WhatsApp Us
-                </a>
-
-            </div>
-
-            <div class="contact-details">
-
-                <p>
-                    Email:
-                    <a href="mailto:vantorarecruitment@gmail.com">
-                        vantorarecruitment@gmail.com
-                    </a>
-                </p>
-
-                <p>
-                    Phone:
-                    <a href="tel:+447840135214">
-                        07840 135214
-                    </a>
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- =========================
-     FLOATING WHATSAPP BUTTON
-========================= -->
-
-<a
-    href="https://wa.me/447840135214?text=Hello%20Vantora%20Recruitment%2C%20I%27d%20like%20to%20make%20an%20enquiry."
-    class="whatsapp-float"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Contact Vantora Recruitment on WhatsApp"
-    title="Chat with us on WhatsApp"
->
-
-    <svg
-        viewBox="0 0 32 32"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-    >
-        <path d="M19.11 17.19c-.27-.14-1.59-.78-1.84-.87-.25-.09-.43-.14-.61.14-.18.27-.7.87-.86 1.05-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.56.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.45-.46-.61-.47-.16-.01-.34-.01-.52-.01-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.26s.98 2.62 1.11 2.8c.14.18 1.92 2.94 4.65 4.12.65.28 1.16.45 1.56.57.66.21 1.26.18 1.74.11.53-.08 1.59-.65 1.81-1.28.23-.63.23-1.17.16-1.28-.07-.11-.25-.18-.52-.32zM16.02 4C9.38 4 4 9.38 4 16.02c0 2.12.55 4.19 1.6 6.02L4 28l6.14-1.58a11.97 11.97 0 0 0 5.88 1.55h.01C22.66 27.97 28 22.59 28 16.02 28 9.38 22.64 4 16.02 4zm0 21.96h-.01a9.95 9.95 0 0 1-5.07-1.39l-.36-.21-3.64.94.97-3.55-.23-.37a9.96 9.96 0 1 1 8.34 4.58z"/>
-    </svg>
-
-</a>
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer>
-
-    <div class="container">
-
-        <div class="footer-content">
-
-            <div>
-
-                <p class="footer-text">
-                    Vantora Recruitment<br>
-                    Reliable people. The right jobs.
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-
-            © 2026 Vantora Recruitment. All rights reserved.
-
-        </div>
-
-    </div>
-
-</footer>
-
-</body>
-</html> 
-Send it all like
-This 
+                   
