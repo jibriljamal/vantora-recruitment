@@ -1,144 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Thank You | Vantora Recruitment</title>
+<title>Thank You | Vantora Recruitment</title>
 
-    <style>
+<meta
+    name="description"
+    content="Thank you for contacting Vantora Recruitment."
+>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #0b0b0b;
-            color: #ffffff;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .thank-you-card {
-            width: 100%;
-            max-width: 650px;
-            background: #151515;
-            border: 1px solid #292929;
-            border-radius: 8px;
-            padding: 55px 40px;
-            text-align: center;
-        }
+html,
+body {
+    min-height: 100%;
+}
 
-        .eyebrow {
-            color: #d4af37;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-size: 13px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0b0b;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+}
 
-        h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
+.page {
+    width: 100%;
+    max-width: 720px;
+    padding: 60px 30px;
+}
 
-        .main-text {
-            color: #cccccc;
-            font-size: 18px;
-            line-height: 1.7;
-            margin-bottom: 20px;
-        }
+.logo {
+    color: #d4af37;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
 
-        .cv-message {
-            color: #aaaaaa;
-            line-height: 1.7;
-            margin-bottom: 35px;
-        }
+.check {
+    width: 78px;
+    height: 78px;
+    margin: 0 auto 30px;
+    border: 2px solid #d4af37;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d4af37;
+    font-size: 38px;
+    font-weight: bold;
+}
 
-        .cv-message a {
-            color: #d4af37;
-            text-decoration: none;
-        }
+.eyebrow {
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
 
-        .cv-message a:hover {
-            text-decoration: underline;
-        }
+h1 {
+    font-size: clamp(38px, 7vw, 64px);
+    line-height: 1.05;
+    margin-bottom: 22px;
+}
 
-        .btn {
-            display: inline-block;
-            background: #d4af37;
-            color: #000000;
-            padding: 14px 25px;
-            border-radius: 5px;
-            font-weight: bold;
-            text-decoration: none;
-            transition: 0.3s ease;
-        }
+p {
+    color: #bdbdbd;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto 34px;
+}
 
-        .btn:hover {
-            background: #f0cc54;
-            transform: translateY(-2px);
-        }
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 190px;
+    padding: 14px 24px;
+    border-radius: 5px;
+    background: #d4af37;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.25s ease;
+}
 
-        @media (max-width: 500px) {
+.button:hover {
+    background: #f0cc54;
+    transform: translateY(-2px);
+}
 
-            .thank-you-card {
-                padding: 45px 25px;
-            }
+.contact {
+    margin-top: 38px;
+    padding-top: 25px;
+    border-top: 1px solid #242424;
+    color: #777777;
+    font-size: 13px;
+}
 
-            h1 {
-                font-size: 38px;
-            }
+.contact a {
+    color: #d4af37;
+    text-decoration: none;
+}
 
-            .main-text {
-                font-size: 16px;
-            }
+@media (max-width: 500px) {
 
-        }
+    .page {
+        padding: 40px 15px;
+    }
 
-    </style>
+    .logo {
+        margin-bottom: 35px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+}
+
+</style>
 </head>
 
 <body>
 
-    <div class="thank-you-card">
+<main class="page">
 
-        <div class="eyebrow">
-            Vantora Recruitment
-        </div>
-
-        <h1>
-            Thank You.
-        </h1>
-
-        <p class="main-text">
-            Your details have been received successfully.
-        </p>
-
-        <p class="cv-message">
-            If you are applying for work, please remember to email
-            your CV to
-            <a href="mailto:vantorarecruitment@gmail.com">
-                vantorarecruitment@gmail.com
-            </a>
-            so we can review your experience and match you with
-            suitable opportunities.
-        </p>
-
-        <a href="/" class="btn">
-            Back To Website
-        </a>
-
+    <div class="logo">
+        Vantora Recruitment
     </div>
 
-</body>
+    <div class="check" aria-hidden="true">
+        ✓
+    </div>
 
+    <div class="eyebrow">
+        Enquiry Received
+    </div>
+
+    <h1>
+        Thank You.
+    </h1>
+
+    <p>
+        Your enquiry has been successfully submitted to
+        Vantora Recruitment. We have received your details
+        and will review your requirements. A member of our
+        team will be in touch as soon as possible.
+    </p>
+
+    <a href="/" class="button">
+        Back To Website
+    </a>
+
+    <div class="contact">
+        Need to contact us directly?
+        <a href="mailto:vantorarecruitment@gmail.com">
+            Email Vantora Recruitment
+        </a>
+    </div>
+
+</main>
+
+</body>
 </html>
